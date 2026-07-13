@@ -1,0 +1,15 @@
+{
+	"name": "adfdevdubyproject007",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3826a1a9-af1b-4b80-84b5-a38b73af7703",
+		"tenantId": "aaafe04d-a458-4e99-9ed5-3a9414987eb8"
+	}
+}
