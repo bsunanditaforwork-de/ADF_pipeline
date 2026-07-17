@@ -56,12 +56,19 @@
 							"policy": {
 								"secureInput": false
 							},
+							"userProperties": [],
 							"typeProperties": {
 								"pipeline": {
 									"referenceName": "PL_CHILD PIPELINE",
 									"type": "PipelineReference"
 								},
-								"waitOnCompletion": true
+								"waitOnCompletion": true,
+								"parameters": {
+									"TableSchema": "@item()TableSchema",
+									"TableName": "@item()TableName",
+									"WatermarkColumn": "@item()WatermarkColumn",
+									"LastLoadValue": "@item()LastLoadValue"
+								}
 							}
 						}
 					]
