@@ -7,25 +7,89 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adfdevdubyproject007"
 		},
+		"ADLS_SQL__accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ADLS_SQL_'"
+		},
+		"ADLS_SQL_PARQUET_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ADLS_SQL_PARQUET'"
+		},
+		"DS_ONPREM_Sqlserver_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'DS_ONPREM_Sqlserver'"
+		},
 		"LS_ADLS_BLOB_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_ADLS_BLOB'"
+		},
+		"LS_CHILD_SQLSERVER_DW_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_CHILD_SQLSERVER_DW'"
 		},
 		"LS_INPUT_CSV_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_INPUT_CSV'"
 		},
+		"LS_PARENT_SQLSERVER_DW_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_PARENT_SQLSERVER_DW'"
+		},
 		"SqlServer1_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'SqlServer1'"
+		},
+		"ADLS_SQL__properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevdubyproject007.dfs.core.windows.net/"
+		},
+		"ADLS_SQL_PARQUET_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevdubyproject007.dfs.core.windows.net/"
+		},
+		"DS_ONPREM_Sqlserver_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "DESKTOP-9N72708\\SQLEXPRESS"
+		},
+		"DS_ONPREM_Sqlserver_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "RetailDW_Dev"
+		},
+		"DS_ONPREM_Sqlserver_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "sunandita"
 		},
 		"LS_ADLS_BLOB_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsdevdubyproject007.dfs.core.windows.net/"
 		},
+		"LS_CHILD_SQLSERVER_DW_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "DESKTOP-9N72708\\SQLEXPRESS"
+		},
+		"LS_CHILD_SQLSERVER_DW_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "RetailDW_Dev"
+		},
+		"LS_CHILD_SQLSERVER_DW_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "sunandita"
+		},
 		"LS_INPUT_CSV_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsdevdubyproject007.dfs.core.windows.net/"
+		},
+		"LS_PARENT_SQLSERVER_DW_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "DESKTOP-9N72708\\SQLEXPRESS                  "
+		},
+		"LS_PARENT_SQLSERVER_DW_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "RetailDW_Dev"
+		},
+		"LS_PARENT_SQLSERVER_DW_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "sunandita"
 		},
 		"SqlServer1_properties_typeProperties_server": {
 			"type": "string",
@@ -66,20 +130,68 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"ADLS_SQL__accountKey": {
+						"value": "[parameters('ADLS_SQL__accountKey')]"
+					},
+					"ADLS_SQL_PARQUET_accountKey": {
+						"value": "[parameters('ADLS_SQL_PARQUET_accountKey')]"
+					},
 					"LS_ADLS_BLOB_accountKey": {
 						"value": "[parameters('LS_ADLS_BLOB_accountKey')]"
 					},
 					"LS_INPUT_CSV_accountKey": {
 						"value": "[parameters('LS_INPUT_CSV_accountKey')]"
 					},
+					"DS_ONPREM_Sqlserver_password": {
+						"value": "[parameters('DS_ONPREM_Sqlserver_password')]"
+					},
+					"LS_CHILD_SQLSERVER_DW_password": {
+						"value": "[parameters('LS_CHILD_SQLSERVER_DW_password')]"
+					},
+					"LS_PARENT_SQLSERVER_DW_password": {
+						"value": "[parameters('LS_PARENT_SQLSERVER_DW_password')]"
+					},
 					"SqlServer1_password": {
 						"value": "[parameters('SqlServer1_password')]"
+					},
+					"ADLS_SQL__properties_typeProperties_url": {
+						"value": "[parameters('ADLS_SQL__properties_typeProperties_url')]"
+					},
+					"ADLS_SQL_PARQUET_properties_typeProperties_url": {
+						"value": "[parameters('ADLS_SQL_PARQUET_properties_typeProperties_url')]"
 					},
 					"LS_ADLS_BLOB_properties_typeProperties_url": {
 						"value": "[parameters('LS_ADLS_BLOB_properties_typeProperties_url')]"
 					},
 					"LS_INPUT_CSV_properties_typeProperties_url": {
 						"value": "[parameters('LS_INPUT_CSV_properties_typeProperties_url')]"
+					},
+					"DS_ONPREM_Sqlserver_properties_typeProperties_server": {
+						"value": "[parameters('DS_ONPREM_Sqlserver_properties_typeProperties_server')]"
+					},
+					"DS_ONPREM_Sqlserver_properties_typeProperties_database": {
+						"value": "[parameters('DS_ONPREM_Sqlserver_properties_typeProperties_database')]"
+					},
+					"DS_ONPREM_Sqlserver_properties_typeProperties_userName": {
+						"value": "[parameters('DS_ONPREM_Sqlserver_properties_typeProperties_userName')]"
+					},
+					"LS_CHILD_SQLSERVER_DW_properties_typeProperties_server": {
+						"value": "[parameters('LS_CHILD_SQLSERVER_DW_properties_typeProperties_server')]"
+					},
+					"LS_CHILD_SQLSERVER_DW_properties_typeProperties_database": {
+						"value": "[parameters('LS_CHILD_SQLSERVER_DW_properties_typeProperties_database')]"
+					},
+					"LS_CHILD_SQLSERVER_DW_properties_typeProperties_userName": {
+						"value": "[parameters('LS_CHILD_SQLSERVER_DW_properties_typeProperties_userName')]"
+					},
+					"LS_PARENT_SQLSERVER_DW_properties_typeProperties_server": {
+						"value": "[parameters('LS_PARENT_SQLSERVER_DW_properties_typeProperties_server')]"
+					},
+					"LS_PARENT_SQLSERVER_DW_properties_typeProperties_database": {
+						"value": "[parameters('LS_PARENT_SQLSERVER_DW_properties_typeProperties_database')]"
+					},
+					"LS_PARENT_SQLSERVER_DW_properties_typeProperties_userName": {
+						"value": "[parameters('LS_PARENT_SQLSERVER_DW_properties_typeProperties_userName')]"
 					},
 					"SqlServer1_properties_typeProperties_server": {
 						"value": "[parameters('SqlServer1_properties_typeProperties_server')]"

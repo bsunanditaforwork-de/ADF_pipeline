@@ -5,20 +5,68 @@
 		"factoryName": {
 			"value": "adfdevdubyproject007"
 		},
+		"ADLS_SQL__accountKey": {
+			"value": ""
+		},
+		"ADLS_SQL_PARQUET_accountKey": {
+			"value": ""
+		},
+		"DS_ONPREM_Sqlserver_password": {
+			"value": ""
+		},
 		"LS_ADLS_BLOB_accountKey": {
+			"value": ""
+		},
+		"LS_CHILD_SQLSERVER_DW_password": {
 			"value": ""
 		},
 		"LS_INPUT_CSV_accountKey": {
 			"value": ""
 		},
+		"LS_PARENT_SQLSERVER_DW_password": {
+			"value": ""
+		},
 		"SqlServer1_password": {
 			"value": ""
+		},
+		"ADLS_SQL__properties_typeProperties_url": {
+			"value": "https://adlsdevdubyproject007.dfs.core.windows.net/"
+		},
+		"ADLS_SQL_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevdubyproject007.dfs.core.windows.net/"
+		},
+		"DS_ONPREM_Sqlserver_properties_typeProperties_server": {
+			"value": "DESKTOP-9N72708\\SQLEXPRESS"
+		},
+		"DS_ONPREM_Sqlserver_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"DS_ONPREM_Sqlserver_properties_typeProperties_userName": {
+			"value": "sunandita"
 		},
 		"LS_ADLS_BLOB_properties_typeProperties_url": {
 			"value": "https://adlsdevdubyproject007.dfs.core.windows.net/"
 		},
+		"LS_CHILD_SQLSERVER_DW_properties_typeProperties_server": {
+			"value": "DESKTOP-9N72708\\SQLEXPRESS"
+		},
+		"LS_CHILD_SQLSERVER_DW_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_CHILD_SQLSERVER_DW_properties_typeProperties_userName": {
+			"value": "sunandita"
+		},
 		"LS_INPUT_CSV_properties_typeProperties_url": {
 			"value": "https://adlsdevdubyproject007.dfs.core.windows.net/"
+		},
+		"LS_PARENT_SQLSERVER_DW_properties_typeProperties_server": {
+			"value": "DESKTOP-9N72708\\SQLEXPRESS                  "
+		},
+		"LS_PARENT_SQLSERVER_DW_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_PARENT_SQLSERVER_DW_properties_typeProperties_userName": {
+			"value": "sunandita"
 		},
 		"SqlServer1_properties_typeProperties_server": {
 			"value": "DESKTOP-9N72708\\SQLEXPRESS"
