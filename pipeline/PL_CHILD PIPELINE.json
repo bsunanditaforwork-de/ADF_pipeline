@@ -131,7 +131,7 @@
 							]
 						},
 						{
-							"name": "SP-UPDT_WTRMRK_copy1",
+							"name": "SP-UPDT_WTRMRK",
 							"type": "SqlServerStoredProcedure",
 							"dependsOn": [
 								{
@@ -153,15 +153,24 @@
 								"storedProcedureName": "[dbo].[UpdateWatermark]",
 								"storedProcedureParameters": {
 									"TableName": {
-										"value": "",
+										"value": {
+											"value": "@pipeline().parameters.TableName",
+											"type": "Expression"
+										},
 										"type": "String"
 									},
 									"TableSchema": {
-										"value": "",
+										"value": {
+											"value": "@pipeline().parameters.TableSchema",
+											"type": "Expression"
+										},
 										"type": "String"
 									},
 									"WatermarkColumn": {
-										"value": "",
+										"value": {
+											"value": "@pipeline().parameters.WatermarkColumn",
+											"type": "Expression"
+										},
 										"type": "String"
 									}
 								}
@@ -169,22 +178,6 @@
 							"linkedServiceName": {
 								"referenceName": "LS_CHILD_SQLSERVER_DW",
 								"type": "LinkedServiceReference"
-							}
-						},
-						{
-							"name": "Execute Pipeline2_copy1",
-							"type": "ExecutePipeline",
-							"dependsOn": [],
-							"policy": {
-								"secureInput": false
-							},
-							"userProperties": [],
-							"typeProperties": {
-								"pipeline": {
-									"referenceName": "PL_CHILD PIPELINE_SP",
-									"type": "PipelineReference"
-								},
-								"waitOnCompletion": true
 							}
 						}
 					]
