@@ -535,7 +535,7 @@
 				"schema": [],
 				"typeProperties": {
 					"schema": {
-						"value": "@data",
+						"value": "@dataset().schemaname",
 						"type": "Expression"
 					},
 					"table": {
