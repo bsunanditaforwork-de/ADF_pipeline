@@ -186,7 +186,7 @@
 		],
 		"parameters": {
 			"TableSchema": {
-				"type": "String"
+				"type": "string"
 			},
 			"TableName": {
 				"type": "string"
@@ -196,20 +196,6 @@
 			},
 			"LastLoadValue": {
 				"type": "string"
-			}
-		},
-		"variables": {
-			"TableName": {
-				"type": "String"
-			},
-			"TableSchema": {
-				"type": "String"
-			},
-			"WatermarkColumn": {
-				"type": "String"
-			},
-			"LastLoadValue": {
-				"type": "String"
 			}
 		},
 		"annotations": []
